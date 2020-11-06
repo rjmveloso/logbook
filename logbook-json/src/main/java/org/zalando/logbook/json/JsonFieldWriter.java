@@ -14,6 +14,7 @@ import org.zalando.logbook.Precorrelation;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 
+@FunctionalInterface
 public interface JsonFieldWriter {
 
 	<M extends HttpMessage> void write(M message, JsonGenerator generator) throws IOException;
